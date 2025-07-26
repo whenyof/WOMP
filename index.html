@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$WOMP — Touch the Slime</title>
+  <link rel="icon" type="image/png" href="assets/logowomp.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo-title">
+      <img class="logo-spin" src="assets/logowomp.png" alt="$WOMP Logo" onerror="this.style.display='none'; console.log('Logo not found at: ' + this.src);" />
+      <h1>$WOMP</h1>
+    </div>
+    <p class="tagline">Touch the Slime. Feel the Pain. Become the Meme.</p>
+    <a href="#buy" class="btn btn-buy pulse">BUY $WOMP</a>
+    <div class="socials">
+      <a href="https://x.com/BuyWOMP" class="social twitter" title="Twitter" target="_blank"></a>
+      <a href="https://t.me/+V31cwurozFsyNDM8" class="social telegram" title="Telegram" target="_blank"></a>
+      <a href="https://x.com/BuyWOMP" class="social discord" title="Discord" target="_blank"></a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <img class="slime-img bounce" src="assets/logowomp.png" alt="Womp Frog Logo" onerror="this.style.display='none'; console.log('Logo not found at: ' + this.src);">
+    <h2 class="hero-phrase">The Slime is Real. The Meme is Eternal.</h2>
+    <a href="#phases" class="btn btn-secondary wobble">SEE THE SLIME PLAN</a>
+  </section>
+
+  <section id="tokenomics" class="tokenomics">
+    <h2>Tokenomics</h2>
+    <img src="assets/logowomp.png" alt="$WOMP Tokenomics Logo" style="width:60px; margin-bottom:15px; filter:drop-shadow(0 0 10px #0f0);">
+    <div class="tokenomics-grid">
+      <div class="tokenomics-item">
+        <span class="tokenomics-label">Total Supply</span>
+        <span class="tokenomics-value">1,000,000,000 $WOMP</span>
+      </div>
+      <div class="tokenomics-item">
+        <span class="tokenomics-label">Liquidity</span>
+        <span class="tokenomics-value">Locked</span>
+      </div>
+      <div class="tokenomics-item">
+        <span class="tokenomics-label">Tax</span>
+        <span class="tokenomics-value">0%</span>
+      </div>
+      <div class="tokenomics-item">
+        <span class="tokenomics-label">Contract</span>
+        <span class="tokenomics-value"><a href="#" class="contract-link">0x123...WOMP</a></span>
+      </div>
+    </div>
+  </section>
+
+  <section id="phases" class="phases">
+    <h2>SLIME ROADMAP</h2>
+    <div class="roadmap">
+      <div class="phase slide-in-left">
+        <strong>PHASE 1:</strong> Birth of the Slime
+        <p>Launch, website, and first memes.</p>
+      </div>
+      <div class="phase slide-in-right">
+        <strong>PHASE 2:</strong> Slime Everywhere
+        <p>Community growth, viral campaigns, listings.</p>
+      </div>
+      <div class="phase slide-in-left">
+        <strong>PHASE 3:</strong> Enter the Slimeverse
+        <p>NFTs, partnerships, meme contests.</p>
+      </div>
+      <div class="phase slide-in-right">
+        <strong>PHASE 4:</strong> Interdimensional Slime
+        <p>Slimeverse expansion, CEX listings, world domination.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="community" class="community">
+    <h2>Join the Slime Community</h2>
+    <img class="community-logo" src="assets/logowomp.png" alt="$WOMP Community Logo" onerror="this.style.display='none'; console.log('Logo not found at: ' + this.src);">
+    <p>Be part of the meme revolution. Connect, share, and spread the slime!</p>
+    <div class="socials">
+        <a href="https://x.com/BuyWOMP" class="social twitter" title="Twitter" target="_blank"></a>
+        <a href="https://t.me/+V31cwurozFsyNDM8" class="social telegram" title="Telegram" target="_blank"></a>
+        <a href="https://x.com/BuyWOMP" class="social discord" title="Discord" target="_blank"></a>
+    </div>
+  </section>
+
+  <footer>
+    <img src="assets/logowomp.png" alt="$WOMP Logo" onerror="this.style.display='none'; console.log('Logo not found at: ' + this.src);">
+    &copy; 2025 $WOMP. All slime rights reserved. This is not financial advice. Just emotional damage.<br>
+    <span class="footer-links">
+      <a href="#tokenomics">Tokenomics</a> |
+    
+      <a href="https://x.com/BuyWOMP">Community</a>
+    </span>
+  </footer>
+
+  <script>
+    // Animación de aparición de roadmap
+    document.addEventListener('DOMContentLoaded', () => {
+      const phases = document.querySelectorAll('.phase');
+      phases.forEach((phase, i) => {
+        setTimeout(() => phase.classList.add('visible'), 400 + i * 400);
+      });
+      
+      // Verificar si los logos se cargan correctamente
+      const logos = document.querySelectorAll('img[src*="logowomp"]');
+      logos.forEach((logo, index) => {
+        logo.addEventListener('load', () => {
+          console.log(`Logo ${index + 1} loaded successfully`);
+        });
+        logo.addEventListener('error', () => {
+          console.log(`Logo ${index + 1} failed to load from: ${logo.src}`);
+        });
+      });
+    });
+  </script>
+</body>
+</html> 
